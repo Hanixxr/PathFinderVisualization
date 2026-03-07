@@ -1,3 +1,118 @@
+# Pathfinding Algorithm Visualization (A\* / Dijkstra / BFS)
+
+A grid-based pathfinding visualization tool built with **Pygame**.\
+It demonstrates three classic algorithms --- **A\***, **Dijkstra**, and
+**BFS** --- allowing users to visually compare their exploration
+processes and efficiency.
+
+# 1. Environment Setup
+
+## Prerequisites
+
+-   Python 3.8+
+-   Pygame library
+
+## Installation
+
+1.  Clone or download this repository to your local machine.
+2.  Open a terminal and navigate to the project root directory.
+3.  Install the required dependency:
+
+``` bash
+pip install pygame
+```
+
+# 2. Running the Program
+
+Run the `main` file:
+
+``` bash
+python main.py
+```
+
+If the interactive window opens successfully, the program is running
+correctly.
+
+# 3. Features and Usage
+
+## Mouse Controls
+
+### Left Click
+
+-   First click: Set the **start node** (orange)
+-   Second click: Set the **end node** (cyan)
+-   Subsequent clicks: Place **obstacles** (black)
+
+When **Sand Mode** is enabled:
+
+-   Subsequent clicks place **sand tiles** (brown)
+
+Holding and dragging the mouse allows continuous placement.
+
+### Right Click
+
+-   Clear cells from the grid
+-   Supports click-and-drag for continuous clearing
+
+## Sand Mode
+
+-   **Disabled**: Each grid cell has a default weight of **1**
+-   **Enabled**: You can place weighted cells (**sand tiles**, brown)
+
+For simplicity, sand tiles have a **weight of 5**.
+
+## Running Algorithms
+
+After placing the **start node** and **end node**, select an algorithm
+to run.
+
+The visualization will display:
+
+-   **Purple** --- Final shortest path
+-   **Red** --- Explored nodes
+-   **Green** --- Nodes queued for exploration
+
+## Clear Path
+
+After an algorithm finishes:
+
+-   Clicking **Clear Path** removes exploration colors (red and green)
+-   The **start node, end node, obstacles, and sand tiles remain
+    unchanged**
+
+## Clear Grid
+
+Clears the entire grid and resets it to the initial **white state**.
+
+## Replay Feature
+
+After the algorithm execution is completed:
+
+-   Use the **progress bar** to review each step
+-   Supports **pause** and **play**
+-   Allows step-by-step replay of the algorithm process
+
+# 4. Algorithms Included
+
+-   **A\*** Search
+-   **Dijkstra's Algorithm**
+-   **Breadth-First Search (BFS)**
+
+These algorithms can be visually compared through their exploration
+patterns and efficiency.
+
+# 5. Technology Stack
+
+-   **Python**
+-   **Pygame**
+
+# 6. Project Purpose
+This project is designed to help users better understand how classical
+pathfinding algorithms work through visualization and interactive
+experimentation.
+
+------------------------------------------------------------
+
 # 寻路算法可视化（A* / Dijkstra / BFS）
 基于 Pygame 实现的网格寻路算法可视化工具，支持 A*、Dijkstra、BFS 三种算法的路径搜索演示，可直观对比不同算法的探索过程和效率。
 
